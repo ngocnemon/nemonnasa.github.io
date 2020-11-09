@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+	    <meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Logo bank -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<style>
+			ul {
+			  list-style-type: none;
+			  margin: 10px;
+			  padding: 1px;
+			}
+			}
+			#rcorners1 {
+			  border-radius: 25px;
+			  background: #73AD21;
+			  padding: 20px; 
+			  width: 200px;
+			  height: 150px;  
+			}
+
+	   		/*Background color*/
+	   		body {
+			  background-color: #07080a;}
+			/* Create four equal columns that sits next to each other */
+			.column {
+			  -ms-flex: 20%; /* IE10 */
+			  flex: 20%;
+			  max-width: 25%;
+			  padding: 0 5px;
+			}
+
+			.column img {
+			  margin-top: 0px;
+			  vertical-align: middle;
+			  width: 100%;
+			}
+
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media screen and (max-width: 1000px) {
+			  .column {
+			    -ms-flex: 50%;
+			    flex: 50%;
+			    max-width: 50%;
+			  }
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 1000px) {
+			  .column {
+			    -ms-flex: 100%;
+			    flex: 100%;
+			    max-width: 100%;
+			  }
+			}
+
+			.ImgThumbnail {
+				border-radius: 5px;
+				cursor: pointer;
+				transition: 0.3s;
+				}
+				.ImgThumbnail:nth-of-type(1) {
+				margin-left: 0%;
+				}
+			.image {
+			  opacity: 1;
+			  display: block;
+			  width: 100%;
+			  height: auto;
+			  transition: .5s ease;
+			  backface-visibility: hidden;
+			}
+			.container:hover .middle {
+			  opacity: 1;
+			}
+
+			.image {
+			    position: relative;
+			    width: 400px;
+			}
+
+			.image__img {
+			    display: block;
+			    width: 100%;
+			}
+
+			.image__overlay {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 60%;
+			    height: 100%;
+			    background: rgba(0, 0, 0, 0.6);
+			    color: #ffffff;
+			    font-family: 'Quicksand', sans-serif;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    justify-content: center;
+			    opacity: 0;
+			    transition: opacity 0.25s;
+			}
+
+			.image__overlay--blur {
+			    backdrop-filter: blur(5px);
+			}
+
+			.image__overlay--primary {
+			    background: White;
+			    border-radius: 40px; 
+			    opacity: 0;
+			}
+
+			.image__overlay > * {
+			    transform: translateY(20px);
+			    transition: transform 0.25s;
+			}
+
+			.image__overlay:hover {
+			    opacity: 0.7;
+			}
+
+			.image__overlay:hover > * {
+			    transform: translateY(0);
+			}
+
+			.image__title {
+			    font-size: 2em;
+			    font-weight: bold;
+			}
+
+			.image__description {
+			    font-size: 1.25em;
+			    margin-top: 0.25em;
+			}
+	 	</style>
+
+  </head>
+  <body>
+
+<!-- Navbar -->
+
+	<nav class="navbar navbar-expand-sm navbar-dark">
+	 <a class="navbar-brand" href="W_Home.html">
+	 	<img src="images/logo/NASA.png" alt="NASA" width="100" style = "position:relative; left:50px;">
+	 </a>
+	  <ul class="navbar-nav ml-auto">
+	    <li class="nav-item">
+	      <a class="nav-link" href="W_Home.html">Home</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="W_Mission.html">Mission</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="W_Gallery.html">Gallery</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="W_Blog.html">Blog</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="W_Cont.html">Contact</a>
+	    </li>
+	  </ul>
+
+	  	<!-- Searchbar -->
+ 	 <form class="form-inline" action="/action_page.php">
+   		 <input class="form-control mr-sm-2" type="text" placeholder="Search">
+   		 <button class="btn btn-primary" type="submit">Search</button>
+ 	 </form>
+	</nav>
+	<br>
+</div>
+</body>
+</html>
+
+</html>
+  <div style="background-image: url('images/Home/bg-01.png');background-size: cover; height:900px; padding-top:30px;">
+<section>
+	<div class="container">
+		<h1 class="text-center pt-5" style="color: white">MISSION</h1>
+		<hr class="w-25">
+		<div class="row">
+	</div>
+<section>
+	<br>
+
+<div class="row">
+	<!-- Card 1 -->
+		  <div class="column">
+			<div class="image">
+			    <img class="image__img" src="images/mission/1-1.png" alt="1" style="width:60%" >
+			    <div class="image__overlay image__overlay--primary">
+			        <div class="image__title">
+			        	<a href="https://www.nasa.gov/specials/artemis/">
+			        	<img class="image__img" src="images/mission/1-2.png" alt="1" style="width:100%" >
+			        	</a>
+			        </div>
+			    </div>
+			</div>
+		  </div>
+	<!-- Card 2 -->
+		  <div class="column">
+			<div class="image">
+			    <img class="image__img" src="images/mission/2-1.png" alt="1" style="width:60%" >
+			    <div class="image__overlay image__overlay--primary">
+			        <div class="image__title">
+			        	<a href="https://www.nasa.gov/mission_pages/webb/main/index.html">
+			        	<img class="image__img" src="images/mission/2-2.png" alt="1" style="width:100%" >
+			        	</a>
+			        </div>
+			    </div>
+			</div>
+		  </div>
+	<!-- Card 3 -->
+		  <div class="column">
+			<div class="image">
+			    <img class="image__img" src="images/mission/3-1.png" alt="1" style="width:60%" >
+			    <div class="image__overlay image__overlay--primary">
+			        <div class="image__title">
+			        	<a href="https://www.nasa.gov/mission_pages/hubble/main/index.html">
+			        	<img class="image__img" src="images/mission/3-2.png" alt="1" style="width:100%" >
+			        	</a>
+			        </div>
+			    </div>
+			</div>
+		   </div>
+	<!-- Card 4 -->
+		  <div class="column">
+			<div class="image">
+			    <img class="image__img" src="images/mission/4-1.png" alt="1" style="width:60%" >
+			    <div class="image__overlay image__overlay--primary">
+			        <div class="image__title">
+			        	<a href="https://www.nasa.gov/exploration/commercial/crew/index.html">
+			        	<img class="image__img" src="images/mission/4-2.png" alt="1" style="width:100%" >
+			        	</a>
+			        </div>
+			    </div>
+			</div>
+		   </div>
+
+<!-- Footer -->
+	<section>
+	<style>
+ 		.footer {
+		   position: fixed;
+		   left: 0;
+		   bottom: 0;
+		   width: 100%;
+		   color: white;
+		   text-align: center;}
+	/* Social Media icon */
+		.fa {
+		  padding: 10px;
+		  font-size: 12px;
+		  width: 30px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 2px 2px;
+		  border-radius: 20%;	}
+
+		.fa:hover {
+	    	opacity: 0.7;}
+
+	    .fa-facebook {
+		  background: #3B5998;
+		  color: white;}
+
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;}
+
+		.fa-instagram {
+		  background: #dd4b39;
+		  color: white;}
+		
+	</style>
+		<br>
+		<br>
+
+	<div class="footer">
+	  <p class="pt-1">Copyright 2020</p>
+		<a href="https://www.facebook.com/ngoc.nemon/" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/" class="fa fa-twitter"></a>
+		<a href="http://instargram.com/" class="fa fa-instagram"></a>
+	</div>
+	<br>
+</div>
+</body>
+</html>
+</html>
